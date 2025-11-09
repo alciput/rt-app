@@ -1,2 +1,2 @@
-# ar-app
+# rt-app
 RT Anggana Application
