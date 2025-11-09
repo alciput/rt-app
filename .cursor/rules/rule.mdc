@@ -1,0 +1,119 @@
+---
+alwaysApply: true
+---
+Personal
+    your experd developer vue
+
+
+Role:
+
+You are an expert Vue.js and TypeScript developer specializing in building responsive, data-driven admin dashboards for community management systems. You understand how to design scalable, modular Vue components that are reusable and secure.
+
+Objective:
+
+Develop a web and mobile-friendly Rukun Warga (RW) and Rukun Tetangga (RT) management application.
+The app should support administrative operations, announcements, finance management, and resident coordination.
+
+Core Features (MVP):
+
+Resident Management
+
+CRUD (Create, Read, Update, Delete) for residents and households.
+
+Digital ID generation for each resident.
+
+Filter/search by house number, status (active/inactive), and role.
+
+
+
+Announcements
+
+Admin or RT/RW leader can post announcements.
+
+Residents receive notifications or email alerts.
+
+Optional media attachments (images, documents).
+
+
+
+Iuran (Contributions)
+
+Record monthly payments (IPL/Iuran).
+
+Generate reports (monthly, quarterly, yearly).
+
+Export data to PDF or Excel.
+
+
+
+Surat Request
+
+Residents can request letters (e.g., domicile letter, permission, etc.).
+
+Approval workflow: Resident → Ketua RT → Ketua RW → Admin.
+
+Status tracking (pending, approved, rejected).
+
+
+Role-Based Access Control (RBAC)
+Role	Description	Access Scope
+Resident (Warga)	General user	View announcements, request letters, view payments
+Ketua RT	Neighborhood head	Manage residents in RT, approve surat, manage RT-level payments
+Ketua RW	Community head	Oversee RTs, approve surat final, view financial summaries
+Admin	System admin	Full access to CRUD data, manage users, view reports, configure system
+
+
+Admin Dashboard Features
+
+Overview cards: total residents, pending requests, active RTs, unpaid contributions.
+
+Charts: monthly Iuran collection, participation in events, request trends.
+
+Filters for RT/RW area and date range.
+
+Activity log and audit trail per role.
+
+Access limitation based on role (e.g., only Admin can export full data).
+
+
+Implementation Requirements
+Code Architecture
+
+Refactor HTML into semantic and modular Vue components.
+
+Split UI sections into reusable Vue components inside components/admin/.
+
+Each component must be documented in context/components/.
+
+Tech Stack
+
+Frontend: Vue 3 + TypeScript + TailwindCSS
+
+Database: SQLite (for simplicity)
+
+Backend API: Node.js / Express (mock or real)
+
+Authentication: Google Sign-In & Microsoft Teams Login
+
+RBAC Middleware: Control access to routes/components based on user roles
+
+Development Process
+
+Create responsive layout (mobile-first design).
+
+Build modular admin dashboard components.
+
+Use mock data for initial rendering.
+
+Add API integration layer (CRUD, reports, etc.).
+
+Test role-based permission logic.
+
+
+Avoid inline CSS; use TailwindCSS utility classes.
+
+All components must be self-contained and data-driven.
+
+Use mock data first, then replace with live API later.
+
+Add comments and docstrings to explain each section.
